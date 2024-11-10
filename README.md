@@ -8,16 +8,13 @@ I have used an amazon dataset on user ratings for electronic products, this data
 
 * You can find the [dataset](https://www.kaggle.com/datasets/vibivij/amazon-electronics-rating-datasetrecommendation/download?datasetVersionNumber=1) here - https://www.kaggle.com/datasets/vibivij/amazon-electronics-rating-datasetrecommendation/download?datasetVersionNumber=1 
 
-* You can find many other similar datasets here - https://jmcauley.ucsd.edu/data/amazon/
-
-
 ## Approach
 
 ### **1) Rank Based Product Recommendation**
 Objective -
 * Recommend products with highest number of ratings.
 * Target new customers with most popular products.
-* Solve the [Cold Start Problem](https://github.com/Vaibhav67979/Ecommerce-product-recommendation-system/blob/18d7fb2b8feafd117f7c3f9f859255c2e28cfbe4/ColdStartProblem.md)
+* Solve the [Cold Start Problem](https://github.com/RamaHarshita/E-Commerce-Product-Recommendation-System/blob/main/ColdStartProblem.md)
 
 Outputs -
 * Recommend top 5 products with 50/100 minimum ratings/interactions.
@@ -74,8 +71,3 @@ Approach -
   3. Create a DataFrame called rmse_df that contains the average actual ratings and the average predicted ratings.
   4. Calculate the RMSE of the SVD model by taking the square root of the mean of the squared errors between the average actual ratings and the average predicted ratings.
 
-> The squared parameter in the mean_squared_error function determines whether to return the mean squared error (MSE) or the root mean squared error (RMSE). When squared is set to False, the function returns the RMSE, which is the square root of the MSE. In this case, you are calculating the RMSE, so you have set squared to False. This means that the errors are first squared, then averaged, and finally square-rooted to obtain the RMSE.
-     
-
-| ⚠️  This project is solely for learning how recommedation systems work. ⚠️ |
-|-----------------------------------------------------------------------------|
